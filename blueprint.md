@@ -2,36 +2,42 @@
 
 ## Overview
 
-This project is a visually engaging, modern login page designed to be an exact replica of the user-provided image. It features a split-screen layout with a specific purple-themed illustration on the left and a clean, styled login form on the right.
+This project is a single-page application that provides a modern and visually consistent login and user registration interface. Both the login and "Create Account" forms are contained within a single `index.html` file, with JavaScript used to toggle between the two views.
 
 ## Design and Style
 
-*   **Aesthetics:** A modern, clean, and stylish user interface that precisely matches the provided design.
+*   **Aesthetics:** A modern, clean, and stylish user interface.
 *   **Color Palette:**
     *   **Background:** A dark purple gradient (`#4f3289` to `#381d63`).
-    *   **Illustration Section:** A solid, lighter purple background (`#7c5ac2`).
-    *   **Login Section:** Clean white.
-    *   **Accents:** A vibrant purple for the login button and the "Welcome back" tab.
-    *   **Text:** Dark grey for the form, white for the "Welcome back" tab.
-*   **Typography:** The 'Poppins' font is used. The form uses labels above the input fields.
-*   **Layout:** A two-column, split-screen layout within a rounded container.
-    *   The left column contains the illustration and descriptive text.
-    *   The right column contains the login form with a distinct header section.
+    *   **Containers:** A split layout with a purple illustration side and a white form side.
+    *   **Accents:** A vibrant purple (`#7c5ac2`) for the login button and a green (`#28a745`) for the registration button.
+    *   **Text:** Dark grey for forms and labels, white for the illustration section.
+*   **Typography:** The 'Poppins' font is used throughout the application.
+*   **Layout:** A two-column container with an illustration on the left and the form section on the right. The form section switches between the login and signup forms.
 *   **Visual Effects:**
-    *   **Drop Shadows:** The main container has a soft shadow.
-    *   **Rounded Corners:** The main container, login button, and "Welcome back" tab have rounded corners.
-*   **Illustration:** The page features the user-provided illustration of a person jumping.
+    *   **Drop Shadows:** The main container and buttons have soft shadows for a lifted look.
+    *   **Rounded Corners:** The main container and buttons have rounded corners.
+
+## Project Structure
+
+*   **`index.html`:** The single file containing all HTML, CSS, and JavaScript for the application. It includes both the login and signup forms.
+*    **`cartoon.png`:** An illustration image used on the login and signup page.
 
 ## Features
 
-*   **Header Section:** The login form has a header section containing a purple "Welcome back" tab, separated by a horizontal line.
-*   **Styled Form:** The form uses labels, has a centered login button, and left-aligned links for "Create Account" and "Forgot Password?".
-*   **Responsive Design:** The layout adapts to smaller screens, stacking the illustration and form vertically.
+*   **Single-Page Application:** The login and signup processes are handled on a single page, providing a seamless user experience without page reloads.
+*   **Dynamic Form Switching:** JavaScript is used to show or hide the login and signup forms based on user interaction.
+*   **Login Form:**
+    *   Includes fields for username and password.
+    *   Features a link to switch to the "Create Account" view.
+*   **Create Account Form:**
+    *   A comprehensive registration form with fields for username, email, first name, last name, password, and password confirmation.
+    *   Includes detailed client-side validation hints and password requirements.
+    *   Features a link to switch back to the login view.
 
-## Current Plan
+## Latest Changes
 
-1.  **Overhaul `index.html`:** Re-implement the HTML and CSS to be a perfect match for the provided image.
-2.  **Re-introduce Labels:** Replace input placeholders with styled `<label>` elements.
-3.  **Recreate Header:** Build the "Welcome back" tab and the horizontal divider at the top of the login section.
-4.  **Adjust Alignment and Spacing:** Ensure all form elements, including the header, input fields, button, and links, are perfectly aligned as shown in the image.
-5.  **Final Polish:** Fine-tune all colors, shadows, and border-radii to match the design precisely.
+*   **Consolidated into Single Page:** The `signup.html` content was merged into `index.html`.
+*   **Added Toggle Logic:** JavaScript was added to switch between the login and signup forms dynamically.
+*   **Removed Redundant File:** The separate `signup.html` file was deleted.
+*   **Updated Blueprint:** The `blueprint.md` has been updated to reflect the new single-page architecture.
